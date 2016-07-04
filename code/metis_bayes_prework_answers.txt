@@ -1,0 +1,42 @@
+Q5: Bayesian (Elvis Presley twin) 
+
+Answer:
+
+Let identical and fraternal twins to be I and F respectively.
+Given,
+	P(I) = 1/300
+	P(F) = 1/125
+
+One piece of information that is important is that Elvis twin was male [designated by M]
+Therefore, 
+	P(M|I) = 1
+	P(M|F) = 1/2
+
+Question is if Elvis twin whas male what is probability he was an identical twin? Or P(I|M).
+
+From Bayes Law we know, 
+	P(I|M) = [P(M|I)*P(I)] / P(M)
+
+Now,
+	P(M) = P(M|I)*P(I) + P(M|F)*P(F)
+		= 1*(1/300) + (1/2)*(1/125)
+		= 11/1500
+
+Therefore, 
+	P(I|M) = [1*(1/300)]/(11/1500)
+		= 5/11
+		= 0.45
+
+----------------------------------------------------------------------
+
+Q6: Bayesian and Frequentist Comparison
+
+Answer:
+
+I have used the example from https://www.youtube.com/watch?v=YsJ4W1k0hUg to illustrate the comparison between Bayesian and Frequentist approach to a particular problem. The problem has to do with finding the probability of head, P(h), for a fair coin toss.
+
+A frequentist defines P(h) relative to the frequency of heads in a long series of 'identical flips'. Bear in mind that the number of flips of the coin could theoretically be infinite in extent. The term 'identical flips' is regarding keeping the conditions of the coin flip the same. This could be parameters such as the vertical distance the coin travels before landing on level ground, elasticity of ground, orientation of the coin, whether initially the front face of coin before flip is constant, etc. Considering that flip of coin is deterministic under conditions that all parameters regarding flip remains constant it is hard to think of how probability comes into play here. But with term 'identical flips' frequentist impose the fact that what is fixed in the situation is the parameter apce and not the data (which side shows up on top).
+
+On the other hand Bayesians take P(h) to equal [# of heads] / [# of possibilities]. Here term possibilities is analogous to parameters before. Hence all the permutations that make the parameter space are summed up to define '# of possibilities' and we count the number of flips that result in heads. It should be noted that it is the data that is fixed and the number of possibilities / parameters that are allowed to vary. 
+
+This example should define the fundamental difference between bayesians and frequentists approach to defining probability of a certain event. One other point is that Bayesians take note of prior information when calculating P of an event. And when this is not present they consider the event to be as equally likely as any event, subject to change only with new information.
