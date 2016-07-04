@@ -40,3 +40,4 @@ A frequentist defines P(h) relative to the frequency of heads in a long series o
 On the other hand Bayesians take P(h) to equal [# of heads] / [# of possibilities]. Here term possibilities is analogous to parameters before. Hence all the permutations that make the parameter space are summed up to define '# of possibilities' and we count the number of flips that result in heads. It should be noted that it is the data that is fixed and the number of possibilities / parameters that are allowed to vary. 
 
 This example should define the fundamental difference between bayesians and frequentists approach to defining probability of a certain event. One other point is that Bayesians take note of prior information when calculating P of an event. And when this is not present they consider the event to be as equally likely as any event, subject to change only with new information.
+ 
